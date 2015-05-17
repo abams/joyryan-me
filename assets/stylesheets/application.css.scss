@@ -1,0 +1,72 @@
+$navPadding: 40px;
+* {
+  font-family: 'Open Sans', sans-serif !important;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: no-repeat center right fixed url(terrarium.jpg);
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  background-color: white;
+  text-align: center;
+  height: $navPadding;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  /*border-bottom: 2px solid black;*/
+  z-index: 1;
+}
+
+nav ul {
+  padding-top: 10px;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+.transparent-text-table {
+  display: table;
+  height: 500px;
+  width: 100%;
+  padding-top: $navPadding;
+  position: relative;
+  overflow: hidden;
+}
+
+.transparent-text-cell {
+  display: table-cell;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 100px;
+}
+
+.text {
+  background-color: white;
+  min-height: 1000px;
+}
+
+.placeholder {
+  min-height: 1000px;
+  color: black;
+  z-index: 1;
+  background-color: white;
+}
