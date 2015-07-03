@@ -1,9 +1,17 @@
 $navPadding: 40px;
+$iconSize: 60px;
+
+@font-face {
+  font-family: "UbuntuLight";
+  src: url("Ubuntu-L.tff");
+}
+
 * {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "UbuntuLight", sans-serif !important;
   padding: 0;
   margin: 0;
 }
+
 body {
   background: no-repeat center right fixed url(terrarium.jpg);
 
@@ -25,7 +33,6 @@ nav {
   position: fixed;
   top: 0px;
   width: 100%;
-  /*border-bottom: 2px solid black;*/
   z-index: 1;
 }
 
@@ -42,11 +49,19 @@ nav li a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.home {
+  height: 100vh;
+}
+
 .transparent-text-table {
   display: table;
-  height: 500px;
+  height: 80%;
   width: 100%;
-  padding-top: $navPadding;
   position: relative;
   overflow: hidden;
 }
@@ -57,16 +72,151 @@ nav li a {
   text-align: center;
   vertical-align: middle;
   font-size: 100px;
+
+  span {
+    font-size: 50px;
+  }
 }
 
-.text {
+.divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mc-embed {
+  height: 20%;
+  color: white;
+  float: right;
+  margin-right: 20%;
+  font-size: 25px;
+
+  .boxes {
+    float: right;
+
+    label {
+      display: block;
+    }
+
+    input {
+      display: block;
+    }
+  }
+}
+
+.email-input {
+  margin-top: 10px;
+  height: 30px;
+  width: 300px;
+  font-size: 20px;
+}
+
+.submit {
+  float: right;
+  margin-top: 10px;
+  background-color:#ed8223;
+  color:#fff;
+  font-family:'Helvetica Neue',sans-serif;
+  font-size:18px;
+  line-height:30px;
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border:0;
+  text-shadow:#C17C3A 0 -1px 0;
+  width:120px;
+  height:32px;
+}
+
+.main-content {
   background-color: white;
-  min-height: 1000px;
-}
-
-.placeholder {
-  min-height: 1000px;
+  min-height: 100%;
   color: black;
   z-index: 1;
-  background-color: white;
+}
+
+.section-title {
+  padding-top: 2 * $navPadding;
+  text-align: center;
+  font-size: 25px;
+}
+
+.about-text {
+  p {
+    padding-top: $navPadding;
+    line-height: 150%;
+    text-align: center;
+  }
+
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.picture-row {
+  padding-top: 2 * $navPadding;
+  position:relative;
+  overflow:hidden;
+}
+
+.picture-third {
+  float: left;
+  width: calc(100% / 3);
+}
+
+.icons-columns {
+  background-color: #F0F0F0;
+  padding-bottom: $navPadding;
+  margin-top: $navPadding;
+  position:relative;
+  overflow:hidden;
+}
+
+.icon-sixth {
+  text-align: center;
+  float: left;
+  margin-left: calc(100%/8);
+  width: calc(100% / 6);
+  padding-top: $navPadding;
+
+  span {
+    color: red;
+    font-size: 30px;
+  }
+
+  p {
+    padding-top: $navPadding / 2;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  img {
+    border-radius: 10000px;
+  }
+
+}
+
+.social {
+  padding-top: 2 * $navPadding;
+  margin-right: 40%;
+  margin-left: 40%;
+  position:relative;
+  overflow:hidden;
+}
+
+.social-icon {
+  float: left;
+  width: calc(100% / 4);
+  text-align: center;
+
+  img {
+    width: $iconSize;
+    height: $iconSize;
+  }
+}
+
+.copyright {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+  color: #bbbbbb;
+  font-size: 15px;
 }

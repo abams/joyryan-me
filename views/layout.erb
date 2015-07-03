@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield_content :title %></title>
+    <title>Little Worlds Workshop</title>
+    <link rel="icon" type="image/jpg" href="/images/letter-l-16.png">
     <link rel="stylesheet" type="text/css" href="/assets/application.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="copyright" content="Little Worlds Workshop | Copyright &copy; 2015 Joy Ryan"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="robots" content="index follow"/>
+
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">Link 1</a>
-        </li>
-        <li><a href="#">Link 2</a>
-        </li>
-        <li><a href="#">Link 3</a>
-        </li>
-      </ul>
+    <nav class="nav">
+      <ul class="nav">
+        <li><a href="#home" class="link">HOME</a></li>
+        <li><a href="#about" class="link">ABOUT</a></li>
+        <li><a href="#me" class="link">ME</a></li>
+        <li><a href="#what" class="link">WHAT</a></li>
+        <li><a href="#expect" class="link">EXPECT</a></li>
+        <li><a href="#schedule" class="link">SCHEDULE</a></li>
+    </ul>
     </nav>
     <%= yield %>
   </body>

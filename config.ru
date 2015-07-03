@@ -11,6 +11,7 @@ map '/assets' do
   sprockets.append_path 'assets/stylesheets'
   sprockets.append_path 'assets/images'
   sprockets.append_path 'assets/javascripts'
+  sprockets.append_path 'assets/fonts'
   run sprockets
 end
 
