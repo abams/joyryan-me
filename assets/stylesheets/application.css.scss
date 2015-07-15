@@ -29,9 +29,9 @@ body {
 nav {
   background-color: white;
   text-align: center;
-  height: $navPadding;
   position: fixed;
   top: 0px;
+  height: $navPadding;
   width: 100%;
   z-index: 1;
 }
@@ -69,9 +69,9 @@ img {
 .transparent-text-cell {
   display: table-cell;
   color: white;
+  font-size: 100px;x
   text-align: center;
   vertical-align: middle;
-  font-size: 100px;
 
   span {
     font-size: 50px;
@@ -86,9 +86,9 @@ img {
 .mc-embed {
   height: 20%;
   color: white;
+  font-size: 25px;
   float: right;
   margin-right: 20%;
-  font-size: 25px;
 
   .boxes {
     float: right;
@@ -104,47 +104,47 @@ img {
 }
 
 .email-input {
+  font-size: 20px;
   margin-top: 10px;
   height: 30px;
   width: 300px;
-  font-size: 20px;
 }
 
 .submit {
-  float: right;
-  margin-top: 10px;
-  background-color:#ed8223;
-  color:#fff;
   font-family:'Helvetica Neue',sans-serif;
   font-size:18px;
-  line-height:30px;
-  border-radius:20px;
-  -webkit-border-radius:20px;
-  -moz-border-radius:20px;
-  border:0;
   text-shadow:#C17C3A 0 -1px 0;
+  line-height:30px;
+  background-color:#ed8223;
+  color:#fff;
+  border:0;
+  border-radius:20px;
   width:120px;
   height:32px;
+  float: right;
+  margin-top: 10px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
 }
 
 .main-content {
   background-color: white;
-  min-height: 100%;
   color: black;
+  min-height: 100%;
   z-index: 1;
 }
 
 .section-title {
-  padding-top: 2 * $navPadding;
-  text-align: center;
   font-size: 25px;
+  text-align: center;
+  padding-top: 2 * $navPadding;
 }
 
 .about-text {
   p {
     padding-top: $navPadding;
-    line-height: 150%;
     text-align: center;
+    line-height: 150%;
   }
 
   margin-right: 25%;
@@ -202,9 +202,9 @@ img {
 }
 
 .social-icon {
+  text-align: center;
   float: left;
   width: calc(100% / 4);
-  text-align: center;
 
   img {
     width: $iconSize;
@@ -213,9 +213,9 @@ img {
 }
 
 .copyright {
-  padding-top: 3em;
-  padding-bottom: 3em;
   text-align: center;
   color: #bbbbbb;
   font-size: 15px;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
