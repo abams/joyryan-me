@@ -69,12 +69,12 @@ img {
 .transparent-text-cell {
   display: table-cell;
   color: white;
-  font-size: 100px;x
+  font-size: 100px;
   text-align: center;
   vertical-align: middle;
 
   span {
-    font-size: 50px;
+    font-size: 25px;
   }
 }
 
@@ -178,7 +178,7 @@ img {
   padding-top: $navPadding;
 
   span {
-    color: red;
+    color: #4682B4;
     font-size: 30px;
   }
 
