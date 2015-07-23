@@ -2,12 +2,12 @@ $navPadding: 40px;
 $iconSize: 60px;
 
 @font-face {
-  font-family: "UbuntuLight";
-  src: url("Ubuntu-L.tff");
+  font-family: "MoonLight";
+  src: url("Moon Light.otf");
 }
 
 * {
-  font-family: "UbuntuLight", sans-serif !important;
+  font-family: "MoonLight", sans-serif !important;
   padding: 0;
   margin: 0;
 }
@@ -36,6 +36,13 @@ nav {
   z-index: 1;
 }
 
+.description {
+  padding-top: $navPadding;
+  margin-right: 8%;
+  margin-left: 8%;
+  font-size: 50px;
+}
+
 nav ul {
   padding-top: 10px;
 }
@@ -60,7 +67,7 @@ img {
 
 .transparent-text-table {
   display: table;
-  height: 80%;
+  height: 100%;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -75,56 +82,8 @@ img {
 
   span {
     font-size: 25px;
+    line-height: 50%;
   }
-}
-
-.divider {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.mc-embed {
-  height: 20%;
-  color: white;
-  font-size: 25px;
-  float: right;
-  margin-right: 20%;
-
-  .boxes {
-    float: right;
-
-    label {
-      display: block;
-    }
-
-    input {
-      display: block;
-    }
-  }
-}
-
-.email-input {
-  font-size: 20px;
-  margin-top: 10px;
-  height: 30px;
-  width: 300px;
-}
-
-.submit {
-  font-family:'Helvetica Neue',sans-serif;
-  font-size:18px;
-  text-shadow:#C17C3A 0 -1px 0;
-  line-height:30px;
-  background-color:#ed8223;
-  color:#fff;
-  border:0;
-  border-radius:20px;
-  width:120px;
-  height:32px;
-  float: right;
-  margin-top: 10px;
-  -webkit-border-radius:20px;
-  -moz-border-radius:20px;
 }
 
 .main-content {
@@ -193,6 +152,41 @@ img {
   }
 }
 
+.newsletter-label {
+  text-align: center;
+  float: center;
+  display: inline;
+}
+
+.mc-embed {
+  padding-top: 2 * $navPadding;
+  font-size: 25px;
+  text-align: center;
+}
+
+.email-input {
+  font-size: 20px;
+  margin-top: 10px;
+  height: 30px;
+  width: 300px;
+}
+
+.submit {
+  font-family:'Helvetica Neue',sans-serif;
+  font-size:18px;
+  text-shadow:#C17C3A 0 -1px 0;
+  line-height:30px;
+  background-color:#ed8223;
+  color:#fff;
+  border:0;
+  border-radius:20px;
+  width:120px;
+  height:32px;
+  margin-top: 10px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+}
+
 .social {
   padding-top: 2 * $navPadding;
   margin-right: 40%;
@@ -214,6 +208,7 @@ img {
 
 .copyright {
   text-align: center;
+  background-color: white;
   color: #bbbbbb;
   font-size: 15px;
   padding-top: 3em;
