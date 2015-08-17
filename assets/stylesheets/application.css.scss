@@ -5,6 +5,15 @@ $iconSize: 60px;
   font-family: "MoonLight";
   src: url("Moon Light.otf");
 }
+@media (max-width: 767px) {
+    .nav {
+        display:none;
+    }
+}
+
+@media print {
+  img { max-width: 100%; }
+}
 
 * {
   font-family: "MoonLight", sans-serif !important;
@@ -77,6 +86,7 @@ img {
   display: table-cell;
   color: white;
   font-size: 100px;
+  width: 100%;
   text-align: center;
   vertical-align: middle;
 
