@@ -1,0 +1,266 @@
+$navPadding: 40px;
+$iconSize: 60px;
+
+@font-face {
+  font-family: "MoonLight";
+  src: url("Moon Light.otf");
+}
+@media (max-width: 767px) {
+    .nav {
+        display:none;
+    }
+}
+
+@media print {
+  img { max-width: 100%; }
+}
+
+* {
+  font-family: 'Josefin Sans', sans-serif !important;
+  /*font-family: "MoonLight", sans-serif !important;*/
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: no-repeat center right fixed url(terrarium.jpg);
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  background-color: white;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  height: $navPadding;
+  width: 100%;
+  z-index: 1;
+}
+
+.description {
+  padding-top: $navPadding;
+  margin-right: 8%;
+  margin-left: 8%;
+  font-size: 50px;
+}
+
+nav ul {
+  padding-top: 10px;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.home {
+  height: 100vh;
+}
+
+.transparent-text-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.transparent-text-cell {
+  display: table-cell;
+  color: white;
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+
+  span {
+    font-size: 25px;
+    line-height: 50%;
+  }
+}
+
+.title {
+  font-size: 100%;
+}
+
+
+
+.main-content {
+  background-color: white;
+  color: black;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 2 * $navPadding;
+}
+
+.about-text {
+  p {
+    padding-top: $navPadding;
+    text-align: center;
+    line-height: 150%;
+  }
+
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+@media (max-width: 978px) {
+  .about-text {
+    /*p {
+      padding-top: $navPadding;
+      text-align: center;
+      line-height: 150%;
+    }*/
+
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+.picture-row {
+  padding-top: 2 * $navPadding;
+  position:relative;
+  overflow:hidden;
+}
+
+.picture-third {
+  float: left;
+  width: calc(100% / 3);
+}
+
+.icons-columns {
+  background-color: #F0F0F0;
+  padding-bottom: $navPadding;
+  margin-top: $navPadding;
+  position:relative;
+  overflow:hidden;
+}
+
+@media (max-width: 978px) {
+  .icon-sixth {
+    .do-description {
+      display: none;
+    }
+  }
+}
+
+.icon-sixth {
+  text-align: center;
+  float: left;
+  margin-left: calc(100%/8);
+  width: calc(100% / 6);
+  padding-top: $navPadding;
+
+  span {
+    color: #4682B4;
+    font-size: 30px;
+  }
+
+  p {
+    padding-top: $navPadding / 2;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  img {
+    border-radius: 10000px;
+  }
+}
+
+.newsletter-label {
+  text-align: center;
+  float: center;
+  display: inline;
+}
+
+.mc-embed {
+  padding-top: 2 * $navPadding;
+  font-size: 25px;
+  text-align: center;
+}
+
+.email-input {
+  font-size: 20px;
+  margin-top: 10px;
+  height: 30px;
+  width: 300px;
+}
+
+.submit {
+  font-family:'Helvetica Neue',sans-serif;
+  font-size:18px;
+  text-shadow:#C17C3A 0 -1px 0;
+  line-height:30px;
+  background-color:#ed8223;
+  color:#fff;
+  border:0;
+  border-radius:20px;
+  width:120px;
+  height:32px;
+  margin-top: 10px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+}
+
+.social {
+  padding-top: 2 * $navPadding;
+  margin-right: 40%;
+  margin-left: 40%;
+  position:relative;
+  overflow:hidden;
+}
+
+@media (max-width: 978px) {
+  .social {
+    padding-top: 2 * $navPadding;
+    margin-right: 10%;
+    margin-left: 10%;
+    position:relative;
+    overflow:hidden;
+  }
+}
+
+.social-icon {
+  /*text-align: center;*/
+  float: left;
+  width: calc(100% / 4);
+  margin: 0;
+
+  img {
+    width: $iconSize;
+    height: $iconSize;
+  }
+}
+
+.copyright {
+  text-align: center;
+  background-color: white;
+  color: #bbbbbb;
+  font-size: 15px;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
