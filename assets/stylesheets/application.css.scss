@@ -117,6 +117,17 @@ img {
   padding-top: 2 * $navPadding;
 }
 
+.class-title {
+  font-size: 25px;
+}
+
+.section-divider {
+  text-align: center;
+  font-size: 80px;
+  font-style: thin;
+
+}
+
 .about-text {
   p {
     padding-top: $navPadding;
@@ -202,6 +213,8 @@ img {
   font-size: 25px;
   text-align: center;
 }
+
+
 
 .email-input {
   font-size: 20px;
