@@ -45,3 +45,9 @@ DEPENDENCIES
   sinatra-contrib
   sprockets
   sprockets-sass
+
+RUBY VERSION
+   ruby 2.3.0p0
+
+BUNDLED WITH
+   1.12.5
