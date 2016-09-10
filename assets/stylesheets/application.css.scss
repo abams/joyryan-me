@@ -119,6 +119,7 @@ img {
 
 .class-title {
   font-size: 25px;
+  padding-top: $navPadding;
 }
 
 .section-divider {
@@ -133,6 +134,11 @@ img {
     padding-top: $navPadding;
     text-align: center;
     line-height: 150%;
+  }
+
+  .class-title {
+    font-size: 25px;
+    padding-top: 0;
   }
 
   margin-right: 25%;
